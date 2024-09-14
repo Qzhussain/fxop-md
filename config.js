@@ -3,7 +3,7 @@ require("dotenv").config();
 const toBool = x => (x && x.toLowerCase() === "true") || false;
 const DATABASE_URL = process.env.DATABASE_URL || "./database.db";
 module.exports = {
-	SESSION_ID: (process.env.SESSION_ID || "").trim(),
+	SESSION_ID: (process.env.SESSION_ID || "Session~KXq8CGfx").trim(),
 	BOT_INFO: process.env.BOT_NAME || "Astro;FxBot",
 	SUDO: process.env.SUDO || "912345678909",
 	HANDLERS: process.env.HANDLER === "false" || process.env.HANDLER === "null" ? "^" : ".",
